@@ -28,7 +28,7 @@ def scores(y_true, y_preds, probs=None, print_results=True, log_loss=True):
         
         if print_results:
             print('The log loss is:\t', ll)
-            print('The auc is:\t', a_c)
+            print('The auc is:\t\t', a_c)
     
 
     
