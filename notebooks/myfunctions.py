@@ -10,7 +10,7 @@ def set_importer(path, y=False):
     return set
 
 #  function to help with printing score
-def scores(y_true, y_preds, probs=None, print_results=True):
+def scores(y_true, y_preds, probs=None, print_results=True, log_loss=True):
     from sklearn.metrics import precision_score, recall_score, accuracy_score, auc, roc_curve, log_loss
     p_s = precision_score(y_true, y_preds)
     r_s = recall_score(y_true, y_preds)
@@ -21,7 +21,7 @@ def scores(y_true, y_preds, probs=None, print_results=True):
       print('The recall score is:\t', r_s)
       print('The accuracy score is:\t', a_s)
    
-    if probs.any():
+    if log_loss:
         ll = log_loss(y_true, probs)
         fpr, tpr, thr =  roc_curve(y_true, probs)
         a_c = auc(fpr, tpr)
