@@ -8,7 +8,7 @@ In this project I trained various models till came up to a final effective model
 
 # Folders in this Project
 **1.** **data** - contains data used in modellling this project.
-**2.** **notebooks** - contains steps used to create this project. **NB:** Each notebook contains a numerical at its begining, indicating which step occured first and which one last.
+**2.** **notebooks** - contains steps used to create this project. **NB:** Each notebook contains a numerical at its begining, indicating which step occured first and which one last. Also in the notebooks folder there is a python file (myfucntions) containing functions which will be helped streamlining various works in this project.
 **3.** **analysis-dfs** - contains exported sets from the notebooks, an exported set is used as data for another set.
 **4**.**images** - images in this readme file are stored here.
 
