@@ -148,7 +148,7 @@ def data_preparation(set, target):
     # 2. Label encoding the target column
     # Conveting target variable to a binary foramt
     le = LabelEncoder()
-    target_transformed = pd.Series(le.fit_transform(target))
+    target_transformed = target.to_frame().status_group.apply(lambda x: 1 if x == 'non functional' else 0)
 
 
     # Data Scaling
